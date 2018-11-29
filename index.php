@@ -1,3 +1,6 @@
+<?php
+require_once 'init.php';
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -260,7 +263,7 @@
           </div>
           <div class="my-3 bg px-4 pb-2">
               <h5 class="pt-4">PHONE</h5>
-              <p style="color: orange">+380 993072311</p>
+              <p style="color: orange">+380 663149613</p>
               <p style="color: orange">+380 633474129</p>
           </div>
           <div class="bg px-4 pb-2">
