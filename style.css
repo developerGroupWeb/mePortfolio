@@ -79,9 +79,10 @@
 }
 
 .contact-content{
-	background-image: url(OK2OLC0.jpg);
+	background-image: url(images/OK2OLC0.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .contact-content .bg{

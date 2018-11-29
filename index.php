@@ -16,7 +16,7 @@
   <body>
   <section>
     <div class="home-bg">
-      <img src="MACBOOKMOCKUP.jpg">
+      <img src="images/MACBOOKMOCKUP.jpg">
       <div class="home-content w-100">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark px-5">
           <a class="navbar-brand font-weight-bold text-warning">JDW</a>
@@ -45,13 +45,14 @@
             </ul>
           </div>
         </nav>
+
         <div class="container text-white">
           <div class="row">
             <div class="col-md-5 d-none d-md-block">
               <div class="decorRoad">
                 <div class="p-4 decorRoad-content">
                   <h2>I'm Mathias HOUNYE</h2>
-                  <h5>Full Stack Web Developper</h5>
+                  <h5>Senior Web Developper</h5>
                 </div>
 
                 <div class="pt-4 pb-2 getMeTouch" id="getMeTouch">
@@ -83,7 +84,7 @@
       <div  class="row">
         <div class="col-sm-4">
           <div class="row">
-            <img src="IMG55.jpg" class="img-fluid" style="max-height: 400px;">
+            <img src="images/IMG55.jpg" class="img-fluid" style="max-height: 400px;">
           </div>
         </div>
 
@@ -142,7 +143,7 @@
           <div class="row px-4">
             <h6>LARAVEL</h6>
             <div class="progress w-100" style="height: 22px;">
-              <div class="progress-bar bg-info w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">90%</div>
+              <div class="progress-bar bg-info" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
             </div>
             <h6>PHP</h6>
             <div class="progress w-100" style="height: 22px;">
@@ -150,7 +151,7 @@
             </div>
             <h6>JQUERY/AJAX</h6>
             <div class="progress w-100" style="height: 22px;">
-              <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+              <div class="progress-bar bg-info" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
             </div>
             <h6>JAVA</h6>
             <div class="progress w-100" style="height: 22px;">
@@ -188,52 +189,37 @@
       </div>
       <div class="card-deck">
         <div class="card">
-          <a href=""><img class="card-img-top" src="portfolio1.jpg" style="height: 150px;"></a>
+          <a href=""><img class="card-img-top" src="images/portfolio1.jpg" style="height: 150px;"></a>
         </div>
         <div class="card">
           <a href="">
-          <img class="card-img-top" src="portfolio2.jpg" style="height: 150px;"></a>
+          <img class="card-img-top" src="images/portfolio2.jpg" style="height: 150px;"></a>
         </div>
         <div class="card"><a href="">
-          <img class="card-img-top" src="portfolio3.jpg" style="height: 150px;"></a>
+          <img class="card-img-top" src="images/portfolio3.jpg" style="height: 150px;"></a>
         </div>
         <div class="card">
           <a href="">
-          <img class="card-img-top" src="short.png" style="height: 150px;"></a>
+          <img class="card-img-top" src="images/short.png" style="height: 150px;"></a>
         </div>
       </div>
 	  <br>
 	  <div class="card-deck">
         <div class="card">
-          <a href=""><img class="card-img-top" src="babor.png" style="height: 150px;"></a>
+          <a href=""><img class="card-img-top" src="images/babor.png" style="height: 150px;"></a>
         </div>
         <div class="card">
           <a href="">
-          <img class="card-img-top" src="facture.png" style="height: 150px;"></a>
+          <img class="card-img-top" src="images/facture.png" style="height: 150px;"></a>
         </div>
         <div class="card"><a href="">
-          <img class="card-img-top" src="portfolio3.jpg" style="height: 150px;"></a>
+          <img class="card-img-top" src="images/portfolio3.jpg" style="height: 150px;"></a>
         </div>
         <div class="card">
           <a href="">
-          <img class="card-img-top" src="short.png" style="height: 150px;"></a>
+          <img class="card-img-top" src="images/short.png" style="height: 150px;"></a>
         </div>
       </div>
-
-      <!--<div class="card-deck mt-4">
-        <div class="card">
-          <img class="card-img-top" src="" style="height: 150px;">
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="" style="height: 150px;">
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="" style="height: 150px;">
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="" style="height: 150px;">
-        </div>
-      </div>-->
     </div>
   </section>
 
@@ -241,11 +227,11 @@
     <div class="container">
       <div class="row">
         <h2 class="mx-auto pb-5" id="contact">CONTACT ME</h2>
-      </div>
+      </div> 
 
       <div class="row">
-        <div class="col-md-6 bg">
-          <div class="p-4">
+        <div class="col-md-6 col-12">
+          <div class="p-4 bg">
             <h5>LEAVE ME A MESSAGE</h5>
             <form class="col-12" action="" method="">
               <div class="form-group row">
@@ -265,7 +251,9 @@
           </div>
         </div>
 
-        <div class="col-md-5 offset-md-1">
+        <div class="col-md-1 d-none d-md-block"></div>
+
+        <div class="col-md-5 col-12 mt-4 mt-md-0">
           <div class="bg px-4 pb-2">
               <h5 class="pt-4">ADDRESS</h5>
               <p style="color: orange">Street Slobazhansky 106, Dnipr, Ukraine</p>
