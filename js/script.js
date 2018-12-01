@@ -113,6 +113,7 @@ $(function(){
 
                         $('#success').html('Your message has been sent successfully').show();
                         $('#name').add('#email, #subject, #message').val('');
+                        $('body').delay(20000).load('index.php');
 
                     }
 
