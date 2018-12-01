@@ -41,6 +41,8 @@ class Validator
 
         if($this->inputPassword($string) != ''){
 
+            // other code here........
+
         }else{
 
             $this->errors[$string] = 'Password is required!';
@@ -52,6 +54,8 @@ class Validator
         if($this->inputText($string) != ''){
 
             if(strlen($this->inputText($string)) >= 4){
+
+                // other code here........
 
             }else{
 
@@ -69,6 +73,8 @@ class Validator
         if($this->inputText($string) != ''){
 
             if(strlen($this->inputText($string)) >= 4){
+
+                // other code here........
 
             }else{
 

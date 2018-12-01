@@ -55,7 +55,7 @@ require_once 'init.php';
               <div class="decorRoad">
                 <div class="p-4 decorRoad-content">
                   <h2>I'm Mathias HOUNYE</h2>
-                  <h5>Senior Web Developper</h5>
+                  <h5>Senior PHP Web Developper</h5>
                 </div>
 
                 <div class="pt-4 pb-2 getMeTouch" id="getMeTouch">
@@ -92,9 +92,15 @@ require_once 'init.php';
         </div>
 
         <div class="col-sm-8">
-          <div class="row" style="padding: 50px 100px 40px 50px;">
+          <div class="row" style="padding: 50px 100px 40px 50px;" id="index">
             <h2 id="about">ABOUT ME</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic </p>
+              <p>
+                  I am the front-end and back-end developer, I am passionate about science and technology
+                  and I have a capacity to adapt and understand new things.
+              </p>
+              <p>
+                  I am a communicator with a very good relationship, I like working in a team and I am available immediately.
+              </p>
           </div>
 
           <div class="row mt-5">
@@ -139,7 +145,10 @@ require_once 'init.php';
         <h2 class="col-12 mb-4 pl-5" id="skills">MY SKILLS</h2>
         <div class="col-md-6">
           <div class="row px-5">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic </p>
+            <p>I followed my online training on openClassroom and I have a maximum knowledge to work in each of
+                these programming languages. I also know some notions about git
+            </p>
+              <p>I have contributed to various projects with friends and some are realized.</p>
           </div>
         </div>
         <div class="col-md-6">
@@ -177,10 +186,10 @@ require_once 'init.php';
         <h1 class="mx-auto">RESUME</h1>
       </div>
       <div class="row">
-        <p class="col-sm-6 offset-sm-3 text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic </p>
+        <p class="col-sm-6 offset-sm-3 text-center">I am ready and willing to put my skills to the test <br/>and to learn from others to improve myself.</p>
       </div>
       <div class="row">
-        <button class="col-4 offset-4 btn bg-primary font-weight-bold text-white">Download</button>
+
       </div>
     </div>
   </section>
@@ -194,10 +203,7 @@ require_once 'init.php';
         <div class="card">
           <a href=""><img class="card-img-top" src="images/portfolio1.jpg" style="height: 150px;"></a>
         </div>
-        <div class="card">
-          <a href="">
-          <img class="card-img-top" src="images/portfolio2.jpg" style="height: 150px;"></a>
-        </div>
+
         <div class="card"><a href="">
           <img class="card-img-top" src="images/portfolio3.jpg" style="height: 150px;"></a>
         </div>
@@ -205,24 +211,15 @@ require_once 'init.php';
           <a href="">
           <img class="card-img-top" src="images/short.png" style="height: 150px;"></a>
         </div>
+          <div class="card">
+              <a href=""><img class="card-img-top" src="images/babor.png" style="height: 150px;"></a>
+          </div>
+          <div class="card">
+              <a href="">
+                  <img class="card-img-top" src="images/facture.png" style="height: 150px;"></a>
+          </div>
       </div>
 	  <br>
-	  <div class="card-deck">
-        <div class="card">
-          <a href=""><img class="card-img-top" src="images/babor.png" style="height: 150px;"></a>
-        </div>
-        <div class="card">
-          <a href="">
-          <img class="card-img-top" src="images/facture.png" style="height: 150px;"></a>
-        </div>
-        <div class="card"><a href="">
-          <img class="card-img-top" src="images/portfolio3.jpg" style="height: 150px;"></a>
-        </div>
-        <div class="card">
-          <a href="">
-          <img class="card-img-top" src="images/short.png" style="height: 150px;"></a>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -236,21 +233,31 @@ require_once 'init.php';
         <div class="col-md-6 col-12">
           <div class="p-4 bg">
             <h5>LEAVE ME A MESSAGE</h5>
-            <form class="col-12" action="" method="">
+
+              <div class="alert-danger" id="error" style="display: none"></div>
+              <div class="alert-success" id="success" style="display: none"></div>
+              <br/>
+
+            <form class="col-12" action="" method="post" id="submit">
               <div class="form-group row">
-                <input type="text" class="form-control" id="name" placeholder="Name*">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Name*">
+                  <span class="error" style="color:red; font-style: italic; font-weight: bold"></span>
               </div>
               <div class="form-group row">
-                <input type="email" class="form-control" id="email" placeholder="Email*">
+                <input type="email" class="form-control" id="email"  name="email" placeholder="Email*">
+                  <span class="error" style="color:red; font-style: italic; font-weight: bold"></span>
               </div>
               <div class="form-group row">
-                <input type="text" class="form-control" id="subject" placeholder="Subject*">
+                <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject*">
+                  <span class="error" style="color:red; font-style: italic; font-weight: bold"></span>
               </div>
               <div class="form-group row">
-                <textarea class="form-control" rows="4"  id="message" placeholder="Leave a message*"></textarea>
+                <textarea class="form-control" rows="4" name="message" id="message" placeholder="Leave a message*"></textarea>
+
               </div>
-              <button type="submit" class="btn btn-primary w-50">SEND</button>
+              <button type="submit" id="send" class="btn btn-primary w-50">SEND</button>
             </form>
+
           </div>
         </div>
 
@@ -283,8 +290,13 @@ require_once 'init.php';
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+  <script src="js/script.js"></script>
   </body>
 </html>
