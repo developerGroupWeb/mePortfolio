@@ -108,12 +108,13 @@ $(function(){
                     if(data != '')
                     {
                         $('#error').html(data).show();
-
+                        $('#success').hide()
                     }else {
 
                         $('#success').html('Your message has been sent successfully').show();
                         $('#name').add('#email, #subject, #message').val('');
-                        $('body').delay(150000).load('index.php');
+                        $('#error').hide();
+                        //$('body').delay(150000).load('index.php');
 
                     }
 

@@ -20,7 +20,7 @@ $email   = strtolower($validate->inputEmail('email'));
 $subject = $validate->inputText('subject');
 $message = $validate->inputText('message');
 
-if(isset($name) && isset($email) && isset($subject) && isset($message)){
+if(!empty($name) && !empty($email) && !empty($subject) && !empty($message)){
 
     if(Email::sendEmail($name, $subject, $email, $message) != true){
 
@@ -29,6 +29,6 @@ if(isset($name) && isset($email) && isset($subject) && isset($message)){
 
 }else{
 
-    $error = 'All fields are required!';
+    $error = 'All fields are required !';
 }
 echo $error;
