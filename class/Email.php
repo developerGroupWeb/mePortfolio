@@ -12,7 +12,7 @@ class Email
 
     static function sendEmail($name, $subject, $email, $message){
 
-       self::$recipient  = "jacknouatin@yahoo.fr";
+       self::$recipient  = "myportfolio@myprojets.site";
        self::$subject    = $subject;
        self::$contents    = " 
             <!DOCTYPE html>
